@@ -1,0 +1,10 @@
+name: URL Document Summarizer
+version: 1.0.0
+description: Summarize documents from a given URL
+input_variables:
+  file_url:
+    type: string
+    description: The URL of the document to summarize
+  max_words:
+    type: number
+    description: Maximum number of words for the summary
