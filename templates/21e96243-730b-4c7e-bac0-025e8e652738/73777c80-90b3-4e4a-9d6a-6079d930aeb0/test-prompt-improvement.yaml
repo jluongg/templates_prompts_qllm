@@ -1,9 +1,9 @@
 name: test prompt improvement
 version: 1.0.0
-description: testt
+description: esefcv bg
 author: youcef
 input_variables:
   prompt:
     type: string
-    description: string prompt
-content: improve the following prompt {{prompt}}
+    description: gfdfg
+content: improve the prompt {{prompt}}
