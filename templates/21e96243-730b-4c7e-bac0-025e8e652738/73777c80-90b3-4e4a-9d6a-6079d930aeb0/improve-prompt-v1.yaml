@@ -1,9 +1,9 @@
 name: improve prompt v1
 version: 1.0.0
-description: gvdcsx
+description: fgvtrd
 author: youcef
 input_variables:
-  prompt:
+  propmt:
     type: string
-    description: hbjnk
-content: improve this prompt {{prompt}}
+    description: deefe
+content: improve this prompt {{propmt}}
