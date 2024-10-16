@@ -1,0 +1,9 @@
+name: translator
+version: 1.0.0
+description: dcs
+author: youcef
+input_variables:
+  text:
+    type: string
+    description: de
+content: translate to french   {{text}}
