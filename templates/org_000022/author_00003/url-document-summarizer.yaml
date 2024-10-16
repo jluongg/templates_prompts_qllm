@@ -3,9 +3,9 @@ version: '1.0'
 description: Template for initializing an AI agent
 author: Your Name
 output_variables:
-  template:
-    type: final_template
-    description: The final template
+  summary:
+    type: string
+    description: 📝 The generated summary of the document
 input_variables:
   role:
     type: string
