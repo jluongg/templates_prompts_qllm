@@ -1,9 +1,0 @@
-name: improve prompt v1
-version: 1.0.0
-description: fgvtrd
-author: youcef
-input_variables:
-  propmt:
-    type: string
-    description: deefe
-content: improve this prompt {{propmt}}
