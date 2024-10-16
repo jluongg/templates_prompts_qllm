@@ -1,0 +1,6 @@
+name: test prompt improvement
+version: 1.0.0
+description: testt
+author: youcef
+input_variables: {}
+content: improve the following prompt {{prompt}}
