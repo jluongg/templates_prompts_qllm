@@ -1,10 +1,23 @@
-name: URL Document Summarizer
-version: 1.0.0
-description: Summarize documents from a given URL
+name: ai_agent
+version: '1.0'
+description: Template for initializing an AI agent
+author: Your Name
 input_variables:
-  file_url:
+  role:
     type: string
-    description: The URL of the document to summarize
-  max_words:
-    type: number
-    description: Maximum number of words for the summary
+    description: The role of the AI agent
+  expertise:
+    type: string
+    description: The area of expertise for the AI agent
+  tone:
+    type: string
+    description: The tone of the AI agent's responses
+content: >
+  You are an AI assistant with the following characteristics:
+  Role: {{role}}
+  Expertise: {{expertise}}
+  Tone: {{tone}}
+
+  As an AI assistant, your primary goal is to provide helpful and accurate information
+  to users based on your defined role and expertise. Maintain the specified tone in
+  your responses. Always strive to be ethical, unbiased, and respectful in your interactions.
