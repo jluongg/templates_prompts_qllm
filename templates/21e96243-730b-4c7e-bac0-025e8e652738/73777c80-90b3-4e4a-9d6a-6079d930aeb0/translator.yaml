@@ -1,0 +1,12 @@
+name: Translator
+version: 1.0.0
+description: Template to translate any text to any language
+author: youcef
+input_variables:
+  lang:
+    type: string
+    description: gbv
+  text:
+    type: string
+    description: gtvd
+content: translate to {{lang}} the text {{text}}
