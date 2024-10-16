@@ -4,10 +4,10 @@ description: vcdvdv
 author: youcef
 input_variables:
   prompt:
-    type: string
-    description: vfd
-output_variables:
-  '':
     type: ''
     description: ''
+output_variables:
+  summary:
+    type: string
+    description: ffrefre
 content: improve my prompt like this {{prompt}}
