@@ -1,9 +1,0 @@
-name: test prompt improvement -v2
-version: 1.0.0
-description: vgbgvg
-author: youcef
-input_variables:
-  prompt:
-    type: string
-    description: tvdvgb
-content: improve the prompt {{prompt}}
