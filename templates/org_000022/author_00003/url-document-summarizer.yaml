@@ -2,6 +2,10 @@ name: ai_agent
 version: '1.0'
 description: Template for initializing an AI agent
 author: Your Name
+output_variables:
+  template:
+    type: final_template
+    description: The final template
 input_variables:
   role:
     type: string
