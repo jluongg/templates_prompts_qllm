@@ -1,9 +1,0 @@
-name: test prompt improvement
-version: 1.0.0
-description: tses
-author: youcef
-input_variables:
-  prompt:
-    type: string
-    description: ferfefre
-content: imprrove the prompt in my folder {{prompt}}
