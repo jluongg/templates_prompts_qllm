@@ -1,9 +1,0 @@
-name: test prompt improvement
-version: 1.0.0
-description: hnbgvcvgjhn
-author: youcef
-input_variables:
-  prompt:
-    type: string
-    description: gbvc
-content: improve this prompt {{prompt}}
