@@ -8,7 +8,7 @@ output_variables:
     description: 🧠 The generated advanced system prompt for the AI agent
 input_variables:
   role:
-    type: string
+    type: array
     description: The primary role of the AI agent
   expertise:
     type: list
