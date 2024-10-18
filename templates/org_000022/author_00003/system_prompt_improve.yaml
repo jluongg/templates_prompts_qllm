@@ -11,7 +11,7 @@ input_variables:
     type: string
     description: The primary role of the AI agent
   expertise:
-    type: array
+    type: list
     description: List of areas of expertise for the AI agent
   tone:
     type: string
