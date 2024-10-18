@@ -57,4 +57,6 @@ content: >
 
   Your responses should be engaging, informative, and tailored to the user's needs while adhering to these guidelines
 
-  provide the {{system_prompt}} final advanced
+  <system_prompt>
+    provide the prompt final advanced
+  </system_prompt>
