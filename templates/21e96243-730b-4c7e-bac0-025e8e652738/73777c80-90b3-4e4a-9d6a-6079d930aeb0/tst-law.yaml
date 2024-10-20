@@ -1,0 +1,114 @@
+name: TST LAW
+version: 1.0.0
+description: HBGD
+author: youcef
+content: >-
+  ## Comprehensive Algerian Legal Analysis and Strategy Development -
+  {{Legal_Topic}}
+
+
+  ### Step 1: Initial Case Analysis
+
+
+  1.1 Identify relevant Algerian laws, regulations, and legal articles.
+
+  1.2 Summarize key legal points, interpretations, and relevant case law.
+
+  1.3 Outline the initial strengths and weaknesses of the case.
+
+
+  ### Step 2: Chain of Thought Analysis
+
+
+  2.1 Consider potential counterarguments:
+      - What are the strongest arguments against our position?
+      - How might the opposing counsel interpret the law differently?
+      - Are there precedents that could be used against us?
+
+  2.2 Explore legal loopholes and alternative interpretations:
+      - Are there any ambiguities in the relevant laws that we can leverage?
+      - Can we find alternative interpretations of key legal principles?
+      - Are there any recent changes in legislation or case law that could benefit our case?
+
+  2.3 Identify potential evidence and witnesses:
+      - What additional evidence could strengthen our case?
+      - Are there expert witnesses who could provide valuable testimony?
+      - How can we challenge or discredit potential evidence against us?
+
+  ### Step 3: Strategy Development
+
+
+  3.1 Formulate a persuasive theme for the case.
+
+  3.2 Develop primary and backup legal arguments.
+
+  3.3 Create a strategy to address and neutralize potential counterarguments.
+
+  3.4 Plan for different scenarios and judge reactions.
+
+
+  ### Step 4: Legal Argumentation
+
+
+  4.1 Present the main legal arguments, citing specific Algerian laws and
+  precedents.
+
+  4.2 Explain how the identified legal rules and principles support the client's
+  position.
+
+  4.3 Address potential weaknesses and counterarguments preemptively.
+
+  4.4 Use appropriate rhetorical devices to enhance persuasiveness.
+
+
+  ### Step 5: Case Improvement Recommendations
+
+
+  5.1 Suggest additional evidence or witnesses to strengthen the case.
+
+  5.2 Recommend further legal research on specific points if needed.
+
+  5.3 Propose alternative legal strategies or approaches if applicable.
+
+  5.4 Identify any procedural steps that could benefit the client's position.
+
+
+  ### Step 6: Concluding Analysis
+
+
+  6.1 Summarize the main arguments and strategy.
+
+  6.2 Assess the overall strength of the case after improvements.
+
+  6.3 Provide a final recommendation on how to proceed.
+
+
+  Important Notes:
+
+  - The response must be provided in {{Language}}.
+
+  - Maintain the specified {{Tone}} throughout the response.
+
+  - Always cite specific legal articles from Algerian law and relevant case law.
+
+  - Use chain of thought reasoning to explore all angles of the case.
+
+  - Ensure all arguments and strategies are ethically sound and adhere to
+  Algerian legal standards.
+
+  - Adapt your language and style to the specified tone while maintaining legal
+  precision.
+input_variables:
+  Legal_Topic:
+    type: string
+    description: topic
+  Language:
+    type: string
+    description: arabic
+  Tone:
+    type: string
+    description: professionel
+model: gpt-4o-mini
+parameters:
+  max_tokens: 3000
+  temperature: 0.1
