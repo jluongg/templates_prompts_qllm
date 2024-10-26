@@ -1,7 +1,21 @@
-name: select_seminal_articles
+name: article testeur
 version: '1.1'
 description: Analyze recent seminal articles on artificial intelligence from arXiv
 author: youcef
+input_variables:
+  Number_of_articles:
+    type: number
+    description: The number of articles to analyze (1-50)
+    place_holder: 10
+  Language:
+    type: string
+    description: The language for the output content
+    place_holder: English
+output_variables:
+  analysis_table:
+    type: string
+    description: A markdown table with the analysis of selected articles
+    place_holder: ''
 content: >
   ## Task:
 
@@ -46,17 +60,3 @@ content: >
 
   Note: If unable to find {{Number_of_articles}} suitable articles, explain why
   and provide analysis for those available.
-input_variables:
-  Number_of_articles:
-    type: number
-    description: The number of articles to analyze (1-50)
-    place_holder: 10
-  Language:
-    type: string
-    description: The language for the output content
-    place_holder: English
-output_variables:
-  analysis_table:
-    type: string
-    description: A markdown table with the analysis of selected articles
-    place_holder: ''
