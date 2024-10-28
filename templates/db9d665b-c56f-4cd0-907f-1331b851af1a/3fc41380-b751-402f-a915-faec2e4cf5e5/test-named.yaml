@@ -1,10 +1,15 @@
 name: test named
-version: 1.0.0
+version: '1'
 description: test...
 author: youcef
-content: who is this person ? {{person}}
 input_variables:
+  context:
+    type: string
+    description: gcd
   person:
     type: string
     description: nama
+content: |-
+  {{context}}
+  who is this person ? {{person}}
 model: gpt-4o-mini
