@@ -1,0 +1,10 @@
+name: test named
+version: 1.0.0
+description: test...
+author: youcef
+content: who is this person ? {{person}}
+input_variables:
+  person:
+    type: string
+    description: nama
+model: gpt-4o-mini
