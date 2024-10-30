@@ -54,3 +54,7 @@ input_variables:
     type: string
     description: The Language in which the content should be written
     place_holder: English
+model: gpt-4o-mini
+parameters:
+  temperature: 0.1
+  top_p: 0.02
