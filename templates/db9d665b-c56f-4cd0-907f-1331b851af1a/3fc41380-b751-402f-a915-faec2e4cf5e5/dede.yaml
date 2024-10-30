@@ -1,0 +1,14 @@
+name: dede
+version: 1.0.0
+description: dedede
+author: youcef
+content: dede {{titlee}}
+input_variables:
+  titlee:
+    type: number
+    description: dededede
+output_variables:
+  dede:
+    type: string
+    description: dede
+model: gpt-4o-mini
