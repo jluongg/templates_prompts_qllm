@@ -1,0 +1,14 @@
+name: decccccccccccc
+version: 1.0.0
+description: cdcsc
+author: youcef
+content: tel me a story   {{title}}
+input_variables:
+  title:
+    type: string
+    description: ded
+output_variables:
+  dede:
+    type: string
+    description: dede
+model: gpt-4o-mini
