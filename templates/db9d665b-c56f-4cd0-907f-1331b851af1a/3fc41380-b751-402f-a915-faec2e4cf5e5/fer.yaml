@@ -1,0 +1,6 @@
+name: fer
+version: 1.0.0
+description: ferfe
+author: youcef
+content: freef {{title}}
+model: gpt-4o-mini
