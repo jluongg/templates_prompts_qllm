@@ -1,0 +1,14 @@
+name: vcgtbs
+version: 1.0.0
+description: dsds
+author: youcef
+content: 'tell mee a story bout : {{title}}'
+input_variables:
+  title:
+    type: string
+    description: de
+model: gpt-4o-mini
+parameters:
+  temperature: 0
+  top_p: 0
+  max_tokens: 333
