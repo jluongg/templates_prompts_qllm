@@ -1,0 +1,14 @@
+name: cfdev
+version: 1.0.0
+description: gtrgr
+author: youcef
+content: tell me a story {{title}}
+input_variables:
+  title:
+    type: string
+    description: dede
+output_variables:
+  summer:
+    type: string
+    description: est
+model: gpt-4o-mini
