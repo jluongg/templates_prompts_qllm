@@ -1,0 +1,6 @@
+name: frfr
+version: 1.0.0
+description: fr
+author: youcef
+content: b fvdc {{test }}
+model: gpt-4o-mini
