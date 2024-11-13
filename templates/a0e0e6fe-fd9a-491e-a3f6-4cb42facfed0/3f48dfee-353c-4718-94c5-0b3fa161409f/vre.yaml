@@ -1,0 +1,10 @@
+name: vre
+version: 1.0.0
+description: fre
+author: youcef
+content: tell mee more about {{title}}
+input_variables:
+  title:
+    type: string
+    description: gvr
+model: gpt-4o-mini
