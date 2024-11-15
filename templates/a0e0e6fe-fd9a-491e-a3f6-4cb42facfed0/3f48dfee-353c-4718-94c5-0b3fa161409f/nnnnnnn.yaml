@@ -1,0 +1,13 @@
+name: nnnnnnn
+version: 1.0.0
+description: kjhbv
+author: youcef
+content: tell me a story about {{title}}, max {{nb}} mots;
+input_variables:
+  title:
+    type: string
+    description: vgf
+  nb:
+    type: string
+    description: vdf
+model: gpt-4o-mini
