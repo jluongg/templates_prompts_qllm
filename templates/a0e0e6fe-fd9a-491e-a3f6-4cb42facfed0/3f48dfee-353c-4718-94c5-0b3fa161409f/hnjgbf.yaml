@@ -1,0 +1,10 @@
+name: hnjgbf
+version: 1.0.0
+description: hgfvc
+author: youcef
+content: tell me a story about {{title}}
+input_variables:
+  title:
+    type: string
+    description: gbvdc
+model: gpt-4o-mini
