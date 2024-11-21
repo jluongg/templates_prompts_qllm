@@ -1,0 +1,37 @@
+name: story_visualization_workflow
+description: Generate a story and create scene visualizations
+defaultProvider: openai
+steps:
+  - tool: localLoader
+    input:
+      path: /home/youcef/Bureau/test.txt
+      encoding: utf-8
+    output: template_content
+
+  - templateUrl: https://github.com/novagen-conseil/qlstorage-test/blob/main/templates/fb156521-9b94-4937-acd0-8ce9cd6866c3/eabc7a8e-5415-4629-9542-2693b9e5beba/ai-story-generator.yaml
+    provider: openai
+    input:
+      genre: "$template_content"
+      theme: "{{theme}}"
+      word_count: "{{word_count}}"
+      target_audience: "{{target_audience}}"
+    output:
+      story: generated_story
+      story_elements: story_elements
+
+  - templateUrl: https://github.com/novagen-conseil/qlstorage-test/blob/main/templates/fb156521-9b94-4937-acd0-8ce9cd6866c3/eabc7a8e-5415-4629-9542-2693b9e5beba/scene-visualization-generator.yaml
+    provider: openai
+    input:
+      scene_text: "$generated_story"
+      visual_style: "{{visual_style}}"
+      atmospheric_mood: "{{atmospheric_mood}}"
+    output:
+      visualization: scene_visualization
+      cinematic_elements: cinematic_notes
+
+  - tool: fileSaver
+    input:
+      path: /home/youcef/Bureau/result.txt
+      content: "$scene_visualization"
+      encoding: utf-8
+    output: save_result
