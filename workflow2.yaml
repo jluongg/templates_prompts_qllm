@@ -7,7 +7,8 @@ steps:
       path: /home/youcef/Bureau/test.txt
       encoding: utf-8
     output: template_content
-  - templateUrl: https://github.com/novagen-conseil/qlstorage-test/blob/main/templates/fb156521-9b94-4937-acd0-8ce9cd6866c3/eabc7a8e-5415-4629-9542-2693b9e5beba/ai-story-generator.yaml
+
+  - templateUrl: https://raw.githubusercontent.com/novagen-conseil/qlstorage-test/main/templates/fb156521-9b94-4937-acd0-8ce9cd6866c3/eabc7a8e-5415-4629-9542-2693b9e5beba/ai-story-generator.yaml
     provider: openai
     input:
       genre: "$template_content"
@@ -17,7 +18,8 @@ steps:
     output:
       story: generated_story
       story_elements: story_elements
-  - templateUrl: https://github.com/novagen-conseil/qlstorage-test/blob/main/templates/fb156521-9b94-4937-acd0-8ce9cd6866c3/eabc7a8e-5415-4629-9542-2693b9e5beba/scene-visualization-generator.yaml
+
+  - templateUrl: https://raw.githubusercontent.com/novagen-conseil/qlstorage-test/main/templates/fb156521-9b94-4937-acd0-8ce9cd6866c3/eabc7a8e-5415-4629-9542-2693b9e5beba/scene-visualization-generator.yaml
     provider: openai
     input:
       scene_text: "$generated_story"
@@ -26,6 +28,14 @@ steps:
     output:
       visualization: scene_visualization
       cinematic_elements: cinematic_notes
+
+  - tool: slack-streamer
+    input:
+      token: xoxb-7117419289317-7150124484336-Pj3n4OXHk8
+      channel: general
+      message: "$scene_visualization"
+    output: slack_message_id
+
   - tool: fileSaver
     input:
       path: /home/youcef/Bureau/result.txt
