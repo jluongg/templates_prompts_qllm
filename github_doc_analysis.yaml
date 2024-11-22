@@ -4,7 +4,7 @@ defaultProvider: openai
 steps:
   - tool: LocalProjectLoader
     input:
-      path: /home/youcef/Bureau/test.txt
+      repositoryUrl: "{{input}}"
       encoding: utf-8
     output: template_content
 
