@@ -1,0 +1,24 @@
+name: github_doc_analysis
+description: Generate a story and create scene visualizations
+defaultProvider: openai
+steps:
+  - tool: LocalProjectLoader
+    input:
+      path: /home/youcef/Bureau/test.txt
+      encoding: utf-8
+    output: template_content
+
+  - templateUrl: https://raw.githubusercontent.com/YatchiYa/templates_prompts_qllm/refs/heads/main/code_review.yaml
+    provider: openai
+    input:
+      content: "$template_content"
+      target_audience: "{{target_audience}}"
+    output:
+      result: result
+
+  - tool: fileSaver
+    input:
+      path: /home/youcef/Bureau/result.txt
+      content: "$result"
+      encoding: utf-8
+    output: save_result
