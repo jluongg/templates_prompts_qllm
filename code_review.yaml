@@ -63,11 +63,17 @@ content: >
 
   ## Improved Code:
 
-  Include the improved code block in <code> tag below: 
-  YOU MUST use the <code> tag to include the improved code !!!
-  Do you understand that you must generate in <code> tag the improved code based on the analysis of the original code ?
+  Include the improved code block in the result tag below:  
+  Do you understand that you must generate in <result> tag the improved code based on the analysis of the original code ?
+  
+  ## Conclusion:
 
-  <code>
+  <result>
+  Provide a summary of the code analysis, highlighting key findings, areas of improvement, and potential future directions.
+  
+  Describe in details what's has been improved in the code and how it will impact the performance or readability of the code.
+
+  
     .. The improved code goes here ...
     DON'T BE LAZY. No Brief or partial code !!!
     The life of earth depends on the quality of your code !!!
@@ -76,12 +82,5 @@ content: >
     Are you fully aware that you must provide the FULL improved code in the <code> tag ?
     Don't loose any comments or documentation. Add or update comments if necessary.
     Double check the code before submitting.
-  </code>
 
-  ## Conclusion:
-
-  <result>
-  Provide a summary of the code analysis, highlighting key findings, areas of improvement, and potential future directions.
-
-  Describe in details what's has been improved in the code and how it will impact the performance or readability of the code.
   </result>
