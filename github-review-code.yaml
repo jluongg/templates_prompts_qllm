@@ -7,7 +7,7 @@ steps:
       repositoryUrl: "{{input}}"
     output: template_content
 
-  - templateUrl: https://raw.githubusercontent.com/YatchiYa/templates_prompts_qllm/refs/heads/main/code_review.yaml
+  - templateUrl: https://raw.githubusercontent.com/YatchiYa/templates_prompts_qllm/refs/heads/main/template-1-code-review.yaml
     provider: openai
     input:
       content: "$template_content"
