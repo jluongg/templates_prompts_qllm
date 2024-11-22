@@ -18,7 +18,7 @@ steps:
 
   - tool: fileSaver
     input:
-      path: /home/youcef/Bureau/result.txt
+      path: /"{{path}}"
       content: "$result"
       encoding: utf-8
     output: save_result
