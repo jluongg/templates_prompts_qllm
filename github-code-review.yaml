@@ -2,7 +2,7 @@ name: github_doc_analysis
 description: Generate a story and create scene visualizations
 defaultProvider: openai
 steps:
-  - tool: LocalProjectLoader
+  - tool: githubLoader
     input:
       repositoryUrl: "{{input}}"
       encoding: utf-8
