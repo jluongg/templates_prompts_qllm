@@ -1,0 +1,25 @@
+name: github_doc_analysis
+description: Generate a story and create scene visualizations
+defaultProvider: openai
+steps:
+  - tool: githubLoader
+    input:
+      repositoryUrl: "{{input}}"
+      authToken: "{{token}}"
+      exclude: "**/node_modules/**, **/dist/**, **/*.test.js, **/*.spec.ts"
+      include: "**/*.ts, **/*.js, **/*.md"
+    output: template_content
+
+  - templateUrl: https://raw.githubusercontent.com/YatchiYa/templates_prompts_qllm/refs/heads/main/template-1-code-review.yaml
+    provider: openai
+    input:
+      content: "$template_content"
+    output:
+      result: result
+
+  - tool: fileSaver
+    input:
+      path: "{{path}}"
+      content: "$result"
+      encoding: utf-8
+    output: save_result
