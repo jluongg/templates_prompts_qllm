@@ -24,3 +24,10 @@ steps:
       content: "$result"
       encoding: utf-8
     output: save_result
+
+  - tool: fileSaver
+    input:
+      path: "{{path_prompt}}"
+      content: "$template_content"
+      encoding: utf-8
+    output: save_result
