@@ -3,6 +3,8 @@ description: Generate a story and create scene visualizations
 defaultProvider: openai
 steps:
   - tool: githubLoader
+    name: "github donwloader"
+    description: "bhyjnk,l;m"
     input:
       repositoryUrl: "{{input}}"
       authToken: "{{token}}"
@@ -11,6 +13,8 @@ steps:
     output: template_content
 
   - templateUrl: https://raw.githubusercontent.com/YatchiYa/templates_prompts_qllm/refs/heads/main/template-1-code-review.yaml
+    name: "code review"
+    description: "vfeffefef"
     provider: openai
     input:
       content: "$template_content"
@@ -18,6 +22,8 @@ steps:
       result: result
 
   - tool: fileSaver
+    name: "tol to save"
+    description: "ghghg"
     input:
       path: "{{path}}"
       content: "$result"
