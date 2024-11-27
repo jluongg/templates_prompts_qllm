@@ -1,0 +1,10 @@
+name: test elements
+version: 1.0.0
+description: OMG this is an amazing template tester
+author: youcef
+content: test  {{tes}}
+input_variables:
+  tes:
+    type: string
+    description: ''
+model: gpt-4o-mini
