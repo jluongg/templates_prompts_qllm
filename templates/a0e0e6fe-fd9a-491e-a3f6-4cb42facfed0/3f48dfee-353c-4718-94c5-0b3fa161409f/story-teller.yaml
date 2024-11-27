@@ -1,0 +1,28 @@
+name: story teller
+version: 1.0.0
+description: story teller with cinematic generation
+author: youcef
+content: |-
+  tell me a story about {{title}}, and give me the cinematics
+
+  ## Always include the Output in Format in xml tags :
+
+  <story_generated>
+  [story generated...]
+  </story_generated>
+
+  <cinematic>
+  [cinematic generated...]
+  </cinematic>
+input_variables:
+  title:
+    type: string
+    description: story title
+output_variables:
+  story_generated:
+    type: string
+    description: story generated...
+  cinematic:
+    type: string
+    description: cinematic generated...
+model: gpt-4o-mini
