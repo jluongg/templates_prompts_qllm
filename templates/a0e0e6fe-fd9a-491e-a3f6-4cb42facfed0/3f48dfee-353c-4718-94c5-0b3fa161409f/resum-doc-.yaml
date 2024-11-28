@@ -1,0 +1,13 @@
+name: 'resum doc '
+version: 1.0.0
+description: resusm doc template with path
+author: youcef
+content: |-
+  i want to resum my document, and give me the key points and the details.
+
+  my article : {{article}}
+input_variables:
+  article:
+    type: file_path
+    description: file path to take
+model: gpt-4o-mini
