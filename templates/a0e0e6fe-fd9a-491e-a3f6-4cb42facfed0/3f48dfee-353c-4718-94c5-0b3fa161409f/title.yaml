@@ -1,0 +1,21 @@
+name: title
+version: 1.0.0
+description: ubhyunjk,l;m
+author: youcef
+content: |-
+  tell me a storry {{title}}
+
+  ## Always include the Output in Format in xml tags :
+
+  <tst>
+  [ghjbk]
+  </tst>
+input_variables:
+  title:
+    type: string
+    description: ghjk
+output_variables:
+  tst:
+    type: string
+    description: ghjbk
+model: gpt-4o-mini
