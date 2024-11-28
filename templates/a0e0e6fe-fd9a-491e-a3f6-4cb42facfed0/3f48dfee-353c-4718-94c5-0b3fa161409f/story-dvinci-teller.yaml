@@ -1,7 +1,18 @@
 name: story dvinci teller
-version: 1.0.0
+version: '1'
 description: desc story teller love
 author: youcef
+input_variables:
+  title:
+    type: string
+    description: ''
+output_variables:
+  story_generated:
+    type: string
+    description: story_generated...
+  cinematics:
+    type: string
+    description: cinematics generated..
 content: >-
   Craft a captivating cinematic story in the genre of {{genre}} centered around
   the theme of {{title}}. Begin by introducing the main character and their
@@ -26,15 +37,4 @@ content: >-
   [cinematics generated..]
 
   </cinematics>
-input_variables:
-  title:
-    type: string
-    description: ''
-output_variables:
-  story_generated:
-    type: string
-    description: story_generated...
-  cinematics:
-    type: string
-    description: cinematics generated..
 model: gpt-4o-mini
