@@ -1,0 +1,31 @@
+name: file reader
+version: 1.0.0
+description: test file reader
+author: youcef
+content: >-
+  Please summarize the following article: {{article}}. 
+
+  Your summary should include:
+
+  1. <KeyPoints>Key Points (3-5 bullet points): Identify the most important
+  concepts or arguments presented in the article.</KeyPoints>
+
+  2. <Details>Details: Provide 2-3 additional contexts or examples that support
+  the key points in a short paragraph.</Details>
+
+  3. <Format>Format: Present your findings in a clear, structured manner with
+  bullet points for key points and a short paragraph for details.</Format>
+
+
+  Ensure clarity and relevance in your responses, and aim for a comprehensive
+  overview that captures the essence of the article without extraneous
+  information.
+input_variables:
+  article:
+    type: file_path
+    description: file path to inject
+model: gpt-4o-mini
+parameters:
+  max_tokens: 499
+  temperature: 0.1
+  top_p: 0
