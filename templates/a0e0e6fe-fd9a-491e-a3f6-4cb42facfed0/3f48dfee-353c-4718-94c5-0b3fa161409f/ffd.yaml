@@ -1,0 +1,10 @@
+name: ffd
+version: 1.0.0
+description: dd
+author: youcef
+content: tel me a sot,gv {{title}}
+input_variables:
+  title:
+    type: string
+    description: fefee
+model: gpt-4o-mini
