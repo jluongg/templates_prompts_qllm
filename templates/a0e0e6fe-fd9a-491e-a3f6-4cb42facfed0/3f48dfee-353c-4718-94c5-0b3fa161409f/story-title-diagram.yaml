@@ -1,0 +1,28 @@
+name: story title diagram
+version: 1.0.0
+description: test !!
+author: youcef
+content: >-
+  Please craft a captivating story based on the title {{title}}, specifying the
+  genre (e.g., fantasy, sci-fi, romance) and the desired tone (e.g., humorous,
+  serious). In addition to the story, create a mermaid diagram that visually
+  represents the historical progression of events and character developments
+  integral to the plot. Your diagram should include: 
+
+  1. Nodes for key events and turning points in the storyline. 
+
+  2. Indications of character arcs and transformations. 
+
+  3. Connections showing relationships and conflicts among major characters. 
+
+
+  For instance, if the title were 'The Lost Kingdom,' the diagram might
+  highlight the kingdom's downfall, key character roles, and significant
+  battles. Focus on making the story engaging and rich, delving into character
+  motivations while ensuring the diagram succinctly organizes the narrative's
+  evolution.
+input_variables:
+  title:
+    type: string
+    description: ''
+model: gpt-4o-mini
