@@ -20,6 +20,8 @@ content: >-
   Ensure clarity and relevance in your responses, and aim for a comprehensive
   overview that captures the essence of the article without extraneous
   information.
+
+  give me the result in markdown format
 input_variables:
   article:
     type: file_path
