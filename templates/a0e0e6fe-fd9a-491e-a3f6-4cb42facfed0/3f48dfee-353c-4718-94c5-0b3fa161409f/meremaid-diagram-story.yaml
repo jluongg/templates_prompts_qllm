@@ -1,0 +1,51 @@
+name: meremaid diagram story
+version: 1.0.0
+description: meremaid diagram story generator
+author: youcef
+content: >-
+  Please craft a captivating story based on the title {{title}}, 
+
+
+  specifying the genre (e.g., fantasy, sci-fi, romance) and the desired tone
+  (e.g., humorous, serious). In addition to the story, 
+
+
+  create a mermaid diagram representation, that visually represents the
+  historical progression of events and character developments integral to the
+  plot.
+
+
+  For instance, if the title were 'The Lost Kingdom,' the diagram might
+  highlight the kingdom's downfall, key character roles, and significant
+  battles. Focus on making the story engaging and rich, delving into character
+  motivations while ensuring the diagram succinctly organizes the narrative's
+  evolution.
+
+
+  ## Always include the Output in Format in xml tags :
+
+
+  <story_generated>
+
+  [story_generated...]
+
+  </story_generated>
+
+
+  <mermaid_diagram>
+
+  [the mermaid diagram generated]
+
+  </mermaid_diagram>
+input_variables:
+  title:
+    type: string
+    description: ''
+output_variables:
+  story_generated:
+    type: string
+    description: story_generated...
+  mermaid_diagram:
+    type: string
+    description: the mermaid diagram generated
+model: gpt-4o-mini
