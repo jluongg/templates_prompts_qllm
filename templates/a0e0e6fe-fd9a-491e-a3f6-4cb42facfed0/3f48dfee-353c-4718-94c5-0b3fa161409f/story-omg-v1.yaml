@@ -1,0 +1,42 @@
+name: story OMG v1
+version: 1.0.0
+description: >-
+  My amazing tool to create a full story teller with scenario, cenematics and
+  role playing...
+author: youcef
+content: >-
+  I want to craft a detailed cinematic story based on the topic: {{topic}}.
+  Please follow these guidelines:  
+    1. <Story Outline>: Create a structured outline that includes:
+       - A captivating beginning, middle, and end.
+       - Key plot points that drive the narrative forward.
+    2. <Character Development>: Define primary characters, including:
+       - Their roles, motivations, and arcs.
+       - Relationships with other characters.
+    3. <Cinematic Elements>: Describe how to visually represent critical scenes, including:
+       - Suggested camera angles, lighting, and settings.
+    4. <Emotional Themes>: Suggest potential themes and emotional tones that the story should convey.
+    5. <Script Format>: Provide a sample script excerpt for a pivotal scene, ensuring it adheres to industry standards.
+    6. <Chain of Thought>: Detail your thought process while creating the story, ensuring logical progression and creativity are evident.
+
+  ## Always include the Output in Format in xml tags :
+
+
+  <script_generated>
+
+  [the story script generated ...]
+
+  </script_generated>
+input_variables:
+  topic:
+    type: string
+    description: ''
+output_variables:
+  script_generated:
+    type: string
+    description: the story script generated ...
+model: anthropic.claude-3-5-haiku-20241022-v1:0
+parameters:
+  max_tokens: 4000
+  temperature: 0.1
+  top_p: 0.01
