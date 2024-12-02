@@ -42,5 +42,5 @@ steps:
       operation: save
       bucket: "{{bucket_name}}"
       key: "{{save_key}}"
-      filePath: /home/jimmy/Bureau/result.txt
+      filePath: ["/home/jimmy/Bureau/result.txt"]
     output: s3_save_result
