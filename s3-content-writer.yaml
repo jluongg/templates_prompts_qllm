@@ -44,15 +44,3 @@ steps:
       key: key: "{{JSON.parse(save_key_json)}}"
       filePath: ["{{local_save_path}}"] # Use the same local path
     output: s3_save_result
-
-
-
-
-  - name: save_story
-    tool: s3
-    input:
-      operation: save
-      bucket: "{{bucket_name}}"
-      key: "{{JSON.parse(save_key_json)}}"  # Parse back into array
-      content: "{{$story_text}}"
-      filePath: "{{local_save_path}}"
