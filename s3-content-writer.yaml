@@ -5,7 +5,7 @@ steps:
   - tool: s3
     input:
       operation: load
-      bucket: "{{bucket_name}}"
+      bucket: "$bucket_name"
       key: "{{JSON.parse(load_key_json)}}" # Parse back into array
     output: template_content
 
