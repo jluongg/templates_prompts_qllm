@@ -6,7 +6,7 @@ steps:
     input:
       operation: load
       bucket: "{{bucket_name}}"
-      key: "{{JSON.parse(load_key_json)}}"  # Parse back into array
+      key: "{{JSON.parse(load_key_json)}}" # Parse back into array
     output: template_content
 
   - templateUrl: https://github.com/novagen-conseil/qlstorage-test/blob/main/templates/fb156521-9b94-4937-acd0-8ce9cd6866c3/eabc7a8e-5415-4629-9542-2693b9e5beba/ai-story-generator.yaml
@@ -41,6 +41,6 @@ steps:
     input:
       operation: save
       bucket: "{{bucket_name}}"
-      key: key: "{{JSON.parse(save_key_json)}}"
+      key: "{{JSON.parse(save_key_json)}}" # Parse back into array
       filePath: ["{{local_save_path}}"] # Use the same local path
     output: s3_save_result
