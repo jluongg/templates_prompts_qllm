@@ -2,10 +2,11 @@ name: github_doc_analysis
 description: Generate a story and create scene visualizations
 defaultProvider: openai
 steps:
-  - tool: githubLoader
+  - tool: s3
     input:
-      repositoryUrl: "{{input}}"
-      excludePatterns: "{{excludePatterns}}"
+      operation: load
+      bucket: "{{bucket_name}}"
+      key: "{{load_key}}"
     output: template_content
 
   - templateUrl: https://raw.githubusercontent.com/YatchiYa/templates_prompts_qllm/refs/heads/main/template-1-code-review.yaml
@@ -17,7 +18,15 @@ steps:
 
   - tool: fileSaver
     input:
-      path: "{{path}}"
+      path: "{{local_save_path}}"
       content: "$result"
       encoding: utf-8
     output: save_result
+
+  - tool: s3
+    input:
+      operation: save
+      bucket: "{{bucket_name}}"
+      key: "{{save_key}}"
+      filePath: "{{local_save_path}}"
+    output: s3_save_result
