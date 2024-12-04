@@ -1,4 +1,4 @@
-name: github_doc_analysis
+name: s3_doc_analysis
 description: Generate a story and create scene visualizations
 defaultProvider: openai
 steps:
