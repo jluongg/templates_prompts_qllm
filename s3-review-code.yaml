@@ -9,7 +9,7 @@ steps:
       key: "{{load_key}}"
     output: template_content
 
-  - templateUrl: https://raw.githubusercontent.com/jluongg/templates_prompts_qllm/refs/heads/main/template-1-code-review-test.yaml
+  - templateUrl: https://raw.githubusercontent.com/jluongg/templates_prompts_qllm/refs/heads/main/template-1-code-review.yaml
     provider: openai
     input:
       content: "$template_content"
