@@ -35,9 +35,3 @@ steps:
       key: "{{save_key}}"
       filePath: "{{local_save_path}}"
     output: s3_save_result
-
-config:
-  aws_access_key_id: ${AWS_ACCESS_KEY_ID}
-  aws_secret_access_key: ${AWS_SECRET_ACCESS_KEY}
-  aws_region: ${AWS_REGION}
-  aws_endpoint_url: "https://custom-endpoint" # optional
