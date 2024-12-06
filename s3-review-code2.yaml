@@ -4,10 +4,11 @@ defaultProvider: openai
 steps:
   - tool: s3
     input:
-      aws_access_key_id: "{{aws_access_key_id}}"
-      aws_secret_access_key: "{{aws_secret_access_key}}"
-      aws_region: "{{aws_region}}"
-      aws_endpoint_url: "{{aws_endpoint_url}}" # optional
+      config:
+        aws_access_key_id: "{{aws_access_key_id}}"
+        aws_secret_access_key: "{{aws_secret_access_key}}"
+        aws_region: "{{aws_region}}"
+        aws_endpoint_url: "{{aws_endpoint_url}}" # optional
       operation: load
       bucket: "{{bucket_name}}"
       key: "{{load_key}}"
