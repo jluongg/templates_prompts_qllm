@@ -30,17 +30,11 @@ steps:
       visualization: scene_visualization
       cinematic_elements: cinematic_notes
 
-  - tool: fileSaver
-    input:
-      path: "{{local_save_path}}" # Use the path from TypeScript
-      content: "$scene_visualization"
-      encoding: utf-8
-    output: save_result
-
   - tool: s3
     input:
       operation: save
       bucket: "{{bucket_name}}"
       key: "{{save_key}}"
-      filePath: "{{local_save_path}}" # Use the same local path
+      filePath: "{{local_save_path}}"
+      content: "$scene_visualization"
     output: s3_save_result
