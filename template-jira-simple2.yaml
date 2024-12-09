@@ -4,11 +4,11 @@ defaultProvider: openai
 steps:
   - tool: jiraHandler
     input:
-      operation: "create",
-      projectKey: "QUAN",
-      summary: "Test Ticket Creation",
-      description: "This is a test ticket to verify the Jira integration",
-      issueType: "Task",
+      operation: "create"
+      projectKey: "QUAN"
+      summary: "Test Ticket Creation"
+      description: "This is a test ticket to verify the Jira integration"
+      issueType: "Task"
       storyPoints: 1
     output: createdTicket
 
