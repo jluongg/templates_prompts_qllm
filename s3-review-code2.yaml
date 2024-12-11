@@ -5,7 +5,7 @@ steps:
   - tool: s3
     input:
       operation: load
-      bucket: "{{bucket_name}}"
+      bucket_name: "{{bucket_name}}"
       key: "{{load_key}}"
     output: template_content
 
@@ -26,7 +26,7 @@ steps:
   - tool: s3
     input:
       operation: save
-      bucket: "{{bucket_name}}"
+      bucket_name: "{{bucket_name}}"
       key: "{{save_key}}"
       filePath: "{{local_save_path}}"
     output: s3_save_result
