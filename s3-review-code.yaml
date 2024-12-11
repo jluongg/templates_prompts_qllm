@@ -16,16 +16,9 @@ steps:
     output:
       result: result
 
-  - tool: fileSaver
-    input:
-      path: "{{local_save_path}}"
-      content: "$result"
-      encoding: utf-8
-    output: save_result
-
   - tool: s3
     input:
-      operation: save
+      operation: save*
       bucket_name: "{{bucket_name}}"
       key: "{{save_key}}"
       filePath: "{{local_save_path}}"
