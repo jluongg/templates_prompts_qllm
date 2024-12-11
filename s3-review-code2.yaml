@@ -18,8 +18,9 @@ steps:
 
   - tool: s3
     input:
-      operation: save*
+      operation: save
       bucket_name: "{{bucket_name}}"
       key: "{{save_key}}"
       filePath: "{{local_save_path}}"
+      content: "$result"
     output: s3_save_result
