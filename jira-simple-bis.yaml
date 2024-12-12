@@ -4,7 +4,7 @@ defaultProvider: openai
 
 # Debug: First step - Create ticket
 steps:
-  - tool: jiraHandler
+  - tool: JiraTool
     input:
       operation: "create"
       projectKey: "{{projectKey}}"
@@ -15,7 +15,7 @@ steps:
     output: createdTicket
 
   # Debug: Second step - Verify ticket
-  - tool: jiraHandler
+  - tool: JiraTool
     input:
       operation: "get"
       issueKey: "$createdTicket"
