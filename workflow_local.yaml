@@ -1,0 +1,31 @@
+name: local_file_operations
+description: Test workflow for local file operations using FileSaverTool and RemoveFromLocalTool
+defaultProvider: openai
+
+steps:
+    - tool: fileSaver
+      input:
+          path: "{{test_file_path}}"
+          content: "{{test_content}}"
+          encoding: "{{encoding}}"
+      output: saved_file_result
+
+    - tool: fileSaver
+      input:
+          path: "{{test_dir}}/nested/test.txt"
+          content: "This is a nested test file"
+          encoding: "utf-8"
+      output: nested_file_result
+
+    - tool: removeFromLocal
+      input:
+          path: "{{test_file_path}}"
+          force: true
+      output: remove_file_result
+
+    - tool: removeFromLocal
+      input:
+          path: "{{test_dir}}"
+          recursive: true
+          force: true
+      output: remove_dir_result
